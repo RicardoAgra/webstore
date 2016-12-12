@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="store">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/css/style.css" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="resources/js/jquery.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/js/app.js"></script>
+        <script src="resources/js/products.js"></script>
+        <script src="resources/js/tabs.js"></script>
+        <script src="resources/js/reviews.js"></script>
+    </head>
+    
+    <body ng-controller='StoreController as store'>
+        <h1> Gem Store! </h1>
+        <div ng-repeat='product in store.products' class='product'>
+            
+            <product-display></product-display>
+            
+            <tabs></tabs>
+            
+            <reviews-form></reviews-form>
+            
+        </div>
+    </body>
+</html>

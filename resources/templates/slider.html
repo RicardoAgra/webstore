@@ -1,0 +1,30 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li ng-repeat='src in product.img' data-target="#myCarousel" data-slide-to="{{ $index }}" ng-class="{ active: $index === 0 }"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div ng-repeat='src in product.img' ng-class="{ item:true ,active: $index === 0}">
+        <img ng-src='{{ src }}' width="200" height="200">
+      </div>
+        
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon">
+        <div class='myGlyphicon' class='myGlyphiconRight'>
+            <img src="resources/img/left.png">
+        </div>
+      </span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon">
+        <div class='myGlyphiconRight'>
+            <img src="resources/img/left.png">
+        </div>
+      </span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,127 @@
+h1
+{
+    font-family: 'Shrikhand', cursive;
+    text-align: center
+}
+h2
+{
+    font-size: 80px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.product
+{
+    text-align: center;
+    height: auto;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    border-width: 2px;
+    border-style: ridge;
+        
+    box-shadow: 4px 6px 20px 0px black;
+}
+.product p
+{
+    text-align: justify;
+    font-family: 'Itim', cursive;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img
+{
+    margin-top: auto;
+    margin-left: auto;
+    width: 70%;
+    height: 220px;
+    margin: auto;
+    border-radius: 10px;
+}
+.carousel-control { border-radius: 10px; }
+.product img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.myGlyphicon, .myGlyphiconRight { margin-top: 85px; }
+.myGlyphiconRight { transform: rotate( 180deg ); }
+.product .specs { text-align: center; }
+.container, .review_container
+{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px; 
+    
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.reviews
+{
+    height: 150px;
+    overflow-y: scroll;
+}
+.review
+{
+    margin-bottom: 1px;
+    padding: 10px;
+    background: #f2f6f8; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 );
+}
+.review .author
+{
+    color: cadetblue;
+    text-align: right;
+    font-style: italic;
+}
+.star_panel
+{
+    width: 253px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.star
+{
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.selected polyline
+{
+    fill: yellow;
+    stroke: rgba( 50,50,255,0.9 );
+}
+.locked polyline
+{
+    fill: green;
+    stroke: rgba( 150,150,155,0.9 );
+}
+.review_container:hover { box-shadow: 0px 0px 20px 0px yellow; }
+.review_container h4 { color: blue; }
+.review_form textarea, .review_form input
+{
+    width: 97%;
+    margin-left: 5px;
+    margin-right 5px;
+}
+.review_form input { margin-top: 5px; }    
+.valid_email { color: forestgreen; }
+.invalid { background-color: rgba( 255,200,200,1 ); }
+.submit_btn
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

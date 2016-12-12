@@ -1,0 +1,27 @@
+<div ng-controller="ReviewController as rv" class='review_container'>
+    
+    <!-- Star Widget -->
+    <h4 ng-model='rv.tittle'>{{ rv.tittle }}</h4>
+                
+    <div ng-mouseleave="rv.stars=rv.lock" class='star_panel'>
+    
+        <div ng-repeat='n in rv.number' class='star' ng-click='rv.lock = n' ng-mouseover='rv.setStar( n )' ng-class='{ selected: rv.isActive( n ),locked:rv.lock === n }'>
+                
+            <star></star>
+                
+        </div>
+    </div>
+    
+    <!-- Form -->
+    <form name='review_form' class='review_form' novalidate>
+  
+        <textarea type='text' ng-model='rv.review_body' ng-focus='rv.invalid_review = false' ng-class='{ invalid:rv.invalid_review }' placeholder='Write your review' class="form-control">
+        </textarea>
+    
+        <input type='email' name='email' ng-model='rv.review_email' ng-class='{ valid_email:review_form.email.$valid }' class="form-control" placeholder='e-mail address' required>
+                    
+        <button ng-click='rv.addReview( product, review_form.email.$valid )' class="btn btn-info submit_btn">Submit review</button>
+            
+    </form>
+            
+</div>

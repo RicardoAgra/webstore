@@ -1,0 +1,7 @@
+    <h2>{{ product.name }}</h2>
+
+    <slider></slider>
+
+    <h3>{{ product.price | currency }}</h3>
+            
+    <button ng-show="store.product.canBuy" ng-hide='store.product.soldOut' class="btn btn-info">Add to cart</button>

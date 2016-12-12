@@ -1,0 +1,45 @@
+[{
+	"name": "Safir",
+	"price": 3.95,
+	"description": "Sapphire is a gemstone variety of the mineral corundum, an aluminium oxide (α-Al2O3). Whilst typically associated with the color blue, natural fancy sapphires also occur in yellow, purple, orange, and green colors",
+	"specs": {
+		"Durability": "100 years",
+		"Strenght": "17.6 KTNS",
+		"Brightness": "bright"
+	},
+	"canBuy": true,
+	"soldOut": false,
+	"img": [
+		"resources/img/safir0.jpg",
+		"resources/img/safir1.jpg",
+		"resources/img/safir2.jpg"
+	],
+	"reviews": [{
+		"stars": 5,
+		"comment": "This safir is really nice!",
+		"author": "Jonny Macarony"
+	}, {
+		"stars": 2,
+		"comment": "It could come in a diferent shade of blue",
+		"author": "Anna Montana"
+	}]
+}, {
+	"name": "Ruby",
+	"price": 5.95,
+	"description": "A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires.",
+	"canBuy": true,
+	"soldOut": false,
+	"img": [
+		"resources/img/ruby.png"
+	],
+	"specs": {
+		"Durability": "73 years",
+		"Strenght": "12.6 KTNS",
+		"Brightness": "Not mutch.."
+	},
+	"reviews": [{
+		"stars": 1,
+		"comment": "I don't like red!",
+		"author": "Jonny Macarony"
+	}]
+}]
